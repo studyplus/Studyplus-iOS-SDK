@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15AB6B46CA8D69A07A657108 /* libPods-StudyplusSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB6543514EFDD1680EB02D7D /* libPods-StudyplusSDK.a */; };
+		33472D69D42A4309A1008C74 /* libPods-StudyplusSDKTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBD5C2B6437D459690D83F00 /* libPods-StudyplusSDKTests.a */; };
+		4302C73818B49A5F005A8390 /* SPLStopwatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4302C73718B49A5F005A8390 /* SPLStopwatch.m */; };
+		4369272E188F7D3B00D06212 /* SPLStudyplus.m in Sources */ = {isa = PBXBuildFile; fileRef = 43692722188F7D3B00D06212 /* SPLStudyplus.m */; };
+		4369272F188F7D3B00D06212 /* SPLStudyplusAPIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 43692723188F7D3B00D06212 /* SPLStudyplusAPIRequest.m */; };
+		43692730188F7D3B00D06212 /* SPLStudyplusError.m in Sources */ = {isa = PBXBuildFile; fileRef = 43692725188F7D3B00D06212 /* SPLStudyplusError.m */; };
+		43692731188F7D3B00D06212 /* SPLStudyplusRecordAmount.m in Sources */ = {isa = PBXBuildFile; fileRef = 43692728188F7D3B00D06212 /* SPLStudyplusRecordAmount.m */; };
+		43692732188F7D3B00D06212 /* SPLStudyplusRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 4369272A188F7D3B00D06212 /* SPLStudyplusRecord.m */; };
+		43692BC7188FA25700D06212 /* libStudyplusSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E8E6761856CB770066D476 /* libStudyplusSDK.a */; };
+		436C40CC1866076000B35D72 /* StudyplusRecordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 436C40CB1866076000B35D72 /* StudyplusRecordTests.m */; };
+		43E8E6881856CB770066D476 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E8E6871856CB770066D476 /* XCTest.framework */; };
+		43E8E6941856CB780066D476 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43E8E6921856CB780066D476 /* InfoPlist.strings */; };
+		43E8E6A2185701C20066D476 /* StudyplusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E8E6A1185701C20066D476 /* StudyplusTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43E8E68C1856CB770066D476 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43E8E66E1856CB770066D476 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43E8E6751856CB770066D476;
+			remoteInfo = StudyplusSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		43E8E6741856CB770066D476 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4302C73618B49A5F005A8390 /* SPLStopwatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPLStopwatch.h; path = StudyplusSDK/SPLStopwatch.h; sourceTree = SOURCE_ROOT; };
+		4302C73718B49A5F005A8390 /* SPLStopwatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPLStopwatch.m; path = StudyplusSDK/SPLStopwatch.m; sourceTree = SOURCE_ROOT; };
+		43692722188F7D3B00D06212 /* SPLStudyplus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPLStudyplus.m; path = StudyplusSDK/SPLStudyplus.m; sourceTree = SOURCE_ROOT; };
+		43692723188F7D3B00D06212 /* SPLStudyplusAPIRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPLStudyplusAPIRequest.m; path = StudyplusSDK/SPLStudyplusAPIRequest.m; sourceTree = SOURCE_ROOT; };
+		43692724188F7D3B00D06212 /* SPLStudyplusError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPLStudyplusError.h; path = StudyplusSDK/SPLStudyplusError.h; sourceTree = SOURCE_ROOT; };
+		43692725188F7D3B00D06212 /* SPLStudyplusError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPLStudyplusError.m; path = StudyplusSDK/SPLStudyplusError.m; sourceTree = SOURCE_ROOT; };
+		43692726188F7D3B00D06212 /* SPLStudyplusDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPLStudyplusDelegate.h; path = StudyplusSDK/SPLStudyplusDelegate.h; sourceTree = SOURCE_ROOT; };
+		43692727188F7D3B00D06212 /* SPLStudyplusLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPLStudyplusLogger.h; path = StudyplusSDK/SPLStudyplusLogger.h; sourceTree = SOURCE_ROOT; };
+		43692728188F7D3B00D06212 /* SPLStudyplusRecordAmount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPLStudyplusRecordAmount.m; path = StudyplusSDK/SPLStudyplusRecordAmount.m; sourceTree = SOURCE_ROOT; };
+		43692729188F7D3B00D06212 /* SPLStudyplusRecordAmount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPLStudyplusRecordAmount.h; path = StudyplusSDK/SPLStudyplusRecordAmount.h; sourceTree = SOURCE_ROOT; };
+		4369272A188F7D3B00D06212 /* SPLStudyplusRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPLStudyplusRecord.m; path = StudyplusSDK/SPLStudyplusRecord.m; sourceTree = SOURCE_ROOT; };
+		4369272B188F7D3B00D06212 /* SPLStudyplusRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPLStudyplusRecord.h; path = StudyplusSDK/SPLStudyplusRecord.h; sourceTree = SOURCE_ROOT; };
+		4369272C188F7D3B00D06212 /* SPLStudyplusAPIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPLStudyplusAPIRequest.h; path = StudyplusSDK/SPLStudyplusAPIRequest.h; sourceTree = SOURCE_ROOT; };
+		4369272D188F7D3B00D06212 /* SPLStudyplus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPLStudyplus.h; path = StudyplusSDK/SPLStudyplus.h; sourceTree = SOURCE_ROOT; };
+		436C40CB1866076000B35D72 /* StudyplusRecordTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudyplusRecordTests.m; sourceTree = "<group>"; };
+		43E8E6761856CB770066D476 /* libStudyplusSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStudyplusSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		43E8E67D1856CB770066D476 /* StudyplusSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StudyplusSDK-Prefix.pch"; sourceTree = "<group>"; };
+		43E8E6861856CB770066D476 /* StudyplusSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudyplusSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43E8E6871856CB770066D476 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		43E8E6911856CB780066D476 /* StudyplusSDKTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StudyplusSDKTests-Info.plist"; sourceTree = "<group>"; };
+		43E8E6931856CB780066D476 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		43E8E6A1185701C20066D476 /* StudyplusTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudyplusTests.m; sourceTree = "<group>"; };
+		6CDC075119D444CB061961CD /* Pods-StudyplusSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyplusSDKTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StudyplusSDKTests/Pods-StudyplusSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6D8BEFFED25640C683A993B8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		75AE92730C3FEEC9998DAB03 /* Pods-StudyplusSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyplusSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StudyplusSDK/Pods-StudyplusSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		AB6543514EFDD1680EB02D7D /* libPods-StudyplusSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StudyplusSDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5BEF810E851793E19193D92 /* Pods-StudyplusSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyplusSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-StudyplusSDK/Pods-StudyplusSDK.release.xcconfig"; sourceTree = "<group>"; };
+		F05AC748C4A7545C45B0C21D /* Pods-StudyplusSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyplusSDKTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StudyplusSDKTests/Pods-StudyplusSDKTests.release.xcconfig"; sourceTree = "<group>"; };
+		FBD5C2B6437D459690D83F00 /* libPods-StudyplusSDKTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StudyplusSDKTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43E8E6731856CB770066D476 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15AB6B46CA8D69A07A657108 /* libPods-StudyplusSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43E8E6831856CB770066D476 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43692BC7188FA25700D06212 /* libStudyplusSDK.a in Frameworks */,
+				43E8E6881856CB770066D476 /* XCTest.framework in Frameworks */,
+				33472D69D42A4309A1008C74 /* libPods-StudyplusSDKTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43802C8E185FFA4A00D941FE /* Studyplus */ = {
+			isa = PBXGroup;
+			children = (
+				4369272D188F7D3B00D06212 /* SPLStudyplus.h */,
+				43692722188F7D3B00D06212 /* SPLStudyplus.m */,
+				4369272C188F7D3B00D06212 /* SPLStudyplusAPIRequest.h */,
+				43692723188F7D3B00D06212 /* SPLStudyplusAPIRequest.m */,
+				43692726188F7D3B00D06212 /* SPLStudyplusDelegate.h */,
+				43692724188F7D3B00D06212 /* SPLStudyplusError.h */,
+				43692725188F7D3B00D06212 /* SPLStudyplusError.m */,
+				43692727188F7D3B00D06212 /* SPLStudyplusLogger.h */,
+				4369272B188F7D3B00D06212 /* SPLStudyplusRecord.h */,
+				4369272A188F7D3B00D06212 /* SPLStudyplusRecord.m */,
+				43692729188F7D3B00D06212 /* SPLStudyplusRecordAmount.h */,
+				43692728188F7D3B00D06212 /* SPLStudyplusRecordAmount.m */,
+				4302C73618B49A5F005A8390 /* SPLStopwatch.h */,
+				4302C73718B49A5F005A8390 /* SPLStopwatch.m */,
+			);
+			name = Studyplus;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		43E8E66D1856CB770066D476 = {
+			isa = PBXGroup;
+			children = (
+				43E8E67B1856CB770066D476 /* Studyplus */,
+				43E8E68F1856CB780066D476 /* StudyplusTests */,
+				43E8E6781856CB770066D476 /* Frameworks */,
+				43E8E6771856CB770066D476 /* Products */,
+				49CC654E20CA237380F2A27B /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		43E8E6771856CB770066D476 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43E8E6761856CB770066D476 /* libStudyplusSDK.a */,
+				43E8E6861856CB770066D476 /* StudyplusSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43E8E6781856CB770066D476 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43E8E6871856CB770066D476 /* XCTest.framework */,
+				6D8BEFFED25640C683A993B8 /* libPods.a */,
+				FBD5C2B6437D459690D83F00 /* libPods-StudyplusSDKTests.a */,
+				AB6543514EFDD1680EB02D7D /* libPods-StudyplusSDK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43E8E67B1856CB770066D476 /* Studyplus */ = {
+			isa = PBXGroup;
+			children = (
+				43802C8E185FFA4A00D941FE /* Studyplus */,
+				43E8E67C1856CB770066D476 /* Supporting Files */,
+			);
+			name = Studyplus;
+			path = StudyplusSDK;
+			sourceTree = "<group>";
+		};
+		43E8E67C1856CB770066D476 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43E8E67D1856CB770066D476 /* StudyplusSDK-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		43E8E68F1856CB780066D476 /* StudyplusTests */ = {
+			isa = PBXGroup;
+			children = (
+				43E8E6A1185701C20066D476 /* StudyplusTests.m */,
+				436C40CB1866076000B35D72 /* StudyplusRecordTests.m */,
+				43E8E6901856CB780066D476 /* Supporting Files */,
+			);
+			name = StudyplusTests;
+			path = StudyplusSDKTests;
+			sourceTree = "<group>";
+		};
+		43E8E6901856CB780066D476 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43E8E6911856CB780066D476 /* StudyplusSDKTests-Info.plist */,
+				43E8E6921856CB780066D476 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49CC654E20CA237380F2A27B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75AE92730C3FEEC9998DAB03 /* Pods-StudyplusSDK.debug.xcconfig */,
+				D5BEF810E851793E19193D92 /* Pods-StudyplusSDK.release.xcconfig */,
+				6CDC075119D444CB061961CD /* Pods-StudyplusSDKTests.debug.xcconfig */,
+				F05AC748C4A7545C45B0C21D /* Pods-StudyplusSDKTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43E8E6751856CB770066D476 /* StudyplusSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43E8E6991856CB780066D476 /* Build configuration list for PBXNativeTarget "StudyplusSDK" */;
+			buildPhases = (
+				813A4A7A17024E4CA022C118 /* 📦 Check Pods Manifest.lock */,
+				43E8E6721856CB770066D476 /* Sources */,
+				43E8E6731856CB770066D476 /* Frameworks */,
+				43E8E6741856CB770066D476 /* CopyFiles */,
+				62CDD57D8E864132B070C939 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StudyplusSDK;
+			productName = StudyplusSDK;
+			productReference = 43E8E6761856CB770066D476 /* libStudyplusSDK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		43E8E6851856CB770066D476 /* StudyplusSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43E8E69C1856CB780066D476 /* Build configuration list for PBXNativeTarget "StudyplusSDKTests" */;
+			buildPhases = (
+				5C9B292132524996BCADD319 /* 📦 Check Pods Manifest.lock */,
+				43E8E6821856CB770066D476 /* Sources */,
+				43E8E6831856CB770066D476 /* Frameworks */,
+				43E8E6841856CB770066D476 /* Resources */,
+				6C6645884994437082EAF22F /* 📦 Copy Pods Resources */,
+				A904EA54BC5E03808ECBD415 /* 📦 Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43E8E68D1856CB770066D476 /* PBXTargetDependency */,
+			);
+			name = StudyplusSDKTests;
+			productName = StudyplusSDKTests;
+			productReference = 43E8E6861856CB770066D476 /* StudyplusSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43E8E66E1856CB770066D476 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SPL;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = studyplus.jp;
+			};
+			buildConfigurationList = 43E8E6711856CB770066D476 /* Build configuration list for PBXProject "StudyplusSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 43E8E66D1856CB770066D476;
+			productRefGroup = 43E8E6771856CB770066D476 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43E8E6751856CB770066D476 /* StudyplusSDK */,
+				43E8E6851856CB770066D476 /* StudyplusSDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43E8E6841856CB770066D476 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43E8E6941856CB780066D476 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5C9B292132524996BCADD319 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		62CDD57D8E864132B070C939 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StudyplusSDK/Pods-StudyplusSDK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C6645884994437082EAF22F /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StudyplusSDKTests/Pods-StudyplusSDKTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		813A4A7A17024E4CA022C118 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A904EA54BC5E03808ECBD415 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StudyplusSDKTests/Pods-StudyplusSDKTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43E8E6721856CB770066D476 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4369272F188F7D3B00D06212 /* SPLStudyplusAPIRequest.m in Sources */,
+				4302C73818B49A5F005A8390 /* SPLStopwatch.m in Sources */,
+				43692732188F7D3B00D06212 /* SPLStudyplusRecord.m in Sources */,
+				43692730188F7D3B00D06212 /* SPLStudyplusError.m in Sources */,
+				43692731188F7D3B00D06212 /* SPLStudyplusRecordAmount.m in Sources */,
+				4369272E188F7D3B00D06212 /* SPLStudyplus.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43E8E6821856CB770066D476 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				436C40CC1866076000B35D72 /* StudyplusRecordTests.m in Sources */,
+				43E8E6A2185701C20066D476 /* StudyplusTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43E8E68D1856CB770066D476 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43E8E6751856CB770066D476 /* StudyplusSDK */;
+			targetProxy = 43E8E68C1856CB770066D476 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		43E8E6921856CB780066D476 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43E8E6931856CB780066D476 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43E8E6971856CB780066D476 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = NO;
+				GCC_WARN_PEDANTIC = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		43E8E6981856CB780066D476 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = NO;
+				GCC_WARN_PEDANTIC = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		43E8E69A1856CB780066D476 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75AE92730C3FEEC9998DAB03 /* Pods-StudyplusSDK.debug.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/StudyplusSDK.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StudyplusSDK/StudyplusSDK-Prefix.pch";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		43E8E69B1856CB780066D476 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5BEF810E851793E19193D92 /* Pods-StudyplusSDK.release.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/StudyplusSDK.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StudyplusSDK/StudyplusSDK-Prefix.pch";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		43E8E69D1856CB780066D476 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CDC075119D444CB061961CD /* Pods-StudyplusSDKTests.debug.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StudyplusSDK/StudyplusSDK-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "StudyplusSDKTests/StudyplusSDKTests-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.studyplus.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		43E8E69E1856CB780066D476 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F05AC748C4A7545C45B0C21D /* Pods-StudyplusSDKTests.release.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StudyplusSDK/StudyplusSDK-Prefix.pch";
+				INFOPLIST_FILE = "StudyplusSDKTests/StudyplusSDKTests-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.studyplus.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43E8E6711856CB770066D476 /* Build configuration list for PBXProject "StudyplusSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43E8E6971856CB780066D476 /* Debug */,
+				43E8E6981856CB780066D476 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43E8E6991856CB780066D476 /* Build configuration list for PBXNativeTarget "StudyplusSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43E8E69A1856CB780066D476 /* Debug */,
+				43E8E69B1856CB780066D476 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43E8E69C1856CB780066D476 /* Build configuration list for PBXNativeTarget "StudyplusSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43E8E69D1856CB780066D476 /* Debug */,
+				43E8E69E1856CB780066D476 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43E8E66E1856CB770066D476 /* Project object */;
+}
