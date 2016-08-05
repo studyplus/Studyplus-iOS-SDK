@@ -67,7 +67,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @result StudyplusRecord object.
  */
-+ (SPLStudyplusRecord*)recordWithDuration:(NSTimeInterval)duration;
++ (instancetype)recordWithDuration:(NSTimeInterval)duration;
 
 /**
  Creates and returns StudyplusRecord object that has number of seconds and other attributes.
@@ -89,7 +89,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  @result StudyplusRecord object.
  */
-+ (SPLStudyplusRecord*)recordWithDuration:(NSTimeInterval)duration options:(NSDictionary* _Nullable)options;
++ (instancetype)recordWithDuration:(NSTimeInterval)duration options:(NSDictionary* _Nullable)options;
 
 /**
  @result Returns the parameters of the study record for posting API

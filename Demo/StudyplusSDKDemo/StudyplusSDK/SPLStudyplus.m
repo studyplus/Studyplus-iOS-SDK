@@ -42,15 +42,15 @@ static NSString * const AppStoreURL = @"https://itunes.apple.com/jp/app/mian-qia
 
 @implementation SPLStudyplus
 
-+ (SPLStudyplus*)studyplusWithConsumerKey:(NSString*)consumerKey
-                        andConsumerSecret:(NSString*)consumerSecret
++ (instancetype)studyplusWithConsumerKey:(NSString*)consumerKey
+                       andConsumerSecret:(NSString*)consumerSecret
 {
     return [[SPLStudyplus alloc] __initWithConsumerKey:consumerKey
                                      andConsumerSecret:consumerSecret];
 }
 
-- (id)__initWithConsumerKey:(NSString*)consumerKey
-          andConsumerSecret:(NSString*)consumerSecret
+- (instancetype)__initWithConsumerKey:(NSString*)consumerKey
+                    andConsumerSecret:(NSString*)consumerSecret
 {
     if (self = [super init]) {
         self.consumerKey = consumerKey;

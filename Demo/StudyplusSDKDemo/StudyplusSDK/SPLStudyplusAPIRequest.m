@@ -35,7 +35,7 @@ static NSInteger const ApiDefaultVersion = 1;
 
 @implementation SPLStudyplusAPIRequest
 
-- (id)init
+- (instancetype)init
 {
     if (self = [super init]) {
         _accessToken = nil;
@@ -43,15 +43,15 @@ static NSInteger const ApiDefaultVersion = 1;
     return self;
 }
 
-+ (SPLStudyplusAPIRequest*)newRequestWithAccessToken:(NSString*)accessToken
-                                             options:(NSDictionary*)options
++ (instancetype)newRequestWithAccessToken:(NSString*)accessToken
+                                  options:(NSDictionary*)options
 {
     return [[SPLStudyplusAPIRequest alloc] initWithAccessToken:accessToken
                                                        options:options];
 }
 
-- (id)initWithAccessToken:(NSString*)accessToken
-                  options:(NSDictionary*)options
+- (instancetype)initWithAccessToken:(NSString*)accessToken
+                            options:(NSDictionary*)options
 {
     if (self = [super init]) {
         _accessToken = accessToken;

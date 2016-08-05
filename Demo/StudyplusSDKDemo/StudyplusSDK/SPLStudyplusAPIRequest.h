@@ -26,8 +26,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SPLStudyplusAPIRequest : NSObject
 
-+ (SPLStudyplusAPIRequest*)newRequestWithAccessToken:(NSString*)accessToken
-                                             options:(NSDictionary*)options;
++ (instancetype)newRequestWithAccessToken:(NSString*)accessToken
+                                  options:(NSDictionary*)options;
 
 - (void)postRequestWithPath:(NSString *)path
            requestParameter:(NSDictionary *)requestParameter
