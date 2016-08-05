@@ -70,7 +70,12 @@ static NSString* const ErrorDomain = @"jp.studyplus.sdk";
             error = [SPLStudyplusError errorWithCode:studyplusErrorCode
                          localizedDescription:@"Failed to post study record. (400 bad request)"];
             break;
-            
+
+        case SPLErrorCodeNoAccessToken:
+            error = [SPLStudyplusError errorWithCode:studyplusErrorCode
+                                localizedDescription:@"No access token"];
+            break;
+
         case SPLErrorCodeUnknown:
             error = [SPLStudyplusError errorWithCode:SPLErrorCodeUnknown
                          localizedDescription:@"Unknown Error."];
