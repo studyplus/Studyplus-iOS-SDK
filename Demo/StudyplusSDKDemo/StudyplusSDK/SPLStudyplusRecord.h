@@ -22,6 +22,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class SPLStudyplusRecordAmount;
 
 /**
@@ -54,7 +56,7 @@
  The comment of learning.<br>
  勉強に関するコメントです。
  */
-@property (nonatomic, readonly) NSString *comment;
+@property (nonatomic, readonly, nullable) NSString *comment;
 
 /**
  Creates and returns StudyplusRecord object that has number of seconds, no amount, and empty comment.<br>
@@ -87,11 +89,13 @@
  
  @result StudyplusRecord object.
  */
-+ (SPLStudyplusRecord*)recordWithDuration:(NSTimeInterval)duration options:(NSDictionary*)options;
++ (SPLStudyplusRecord*)recordWithDuration:(NSTimeInterval)duration options:(NSDictionary* _Nullable)options;
 
 /**
  @result Returns the parameters of the study record for posting API
  */
 - (NSDictionary*)toRequestParam;
+
+NS_ASSUME_NONNULL_END
 
 @end

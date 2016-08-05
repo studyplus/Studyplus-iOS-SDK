@@ -22,6 +22,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface SPLStudyplusAPIRequest : NSObject
 
 + (SPLStudyplusAPIRequest*)newRequestWithAccessToken:(NSString*)accessToken
@@ -29,7 +31,9 @@
 
 - (void)postRequestWithPath:(NSString *)path
            requestParameter:(NSDictionary *)requestParameter
-                  completed:(void(^)(NSDictionary *response))completed
+                  completed:(void(^)(NSDictionary * _Nullable response))completed
                      failed:(void(^)(NSError *error))failed;
+
+NS_ASSUME_NONNULL_END
 
 @end
