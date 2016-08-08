@@ -142,8 +142,8 @@ static NSString * const AppStoreURL = @"https://itunes.apple.com/jp/app/mian-qia
     }
     
     if ([url.pathComponents[1] isEqualToString:@"success"]) {
-        NSString *accessToken = url.pathComponents[2];
-        NSString *username = url.pathComponents[3];
+        NSString *accessToken = [url.pathComponents[2] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+        NSString *username = [url.pathComponents[3] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
         [self saveAccessToken:accessToken andUsername:username];
         [self.delegate studyplusDidConnect:self];
     } else if ([url.pathComponents[1] isEqualToString:@"fail"]) {
