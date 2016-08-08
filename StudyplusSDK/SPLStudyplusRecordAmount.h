@@ -22,6 +22,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  The class that represents the amount of learning. <br>
  学習量を表すクラスです。
@@ -58,5 +60,7 @@
  @result Returns the parameters of the study record for posting API
  */
 - (NSDictionary*)toRequestParameter;
+
+NS_ASSUME_NONNULL_END
 
 @end

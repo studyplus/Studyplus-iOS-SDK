@@ -25,6 +25,8 @@
 #import "SPLStudyplusRecordAmount.h"
 #import "SPLStopwatch.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  The class for using Studyplus.<br>
  For example, you can authenticate in Studyplus account, de-authentication, and post study record.
@@ -67,7 +69,7 @@
 /**
  @see SPLStudyplusDelegate protocol
  */
-@property (nonatomic, weak) id<SPLStudyplusDelegate> delegate;
+@property (nonatomic, weak, nullable) id<SPLStudyplusDelegate> delegate;
 
 /**
  When set to YES, if Studyplus is not installed, AppStore application starts when auth/login methods are called. Default value is YES.<br>
@@ -79,18 +81,18 @@
  Username of Studyplus account. It is set when the auth or login is successful. Default value is nil.<br>
  Studyplusアカウントのユーザ名です。login または authが成功したとき設定されます。設定されるまではnilです。
  */
-@property (nonatomic, copy, readonly) NSString *username;
+@property (nonatomic, copy, readonly, nullable) NSString *username;
 
 /**
  Access token of Studyplus API. It is set when the auth or login is successful. Default value is nil.<br>
  StudyplusAPIのアクセストークンです。login または authが成功したとき設定されます。設定されるまではnilです。
  */
-@property (nonatomic, copy, readonly) NSString *accessToken;
+@property (nonatomic, copy, readonly, nullable) NSString *accessToken;
 
 /**
  @see SPLStopwatch class
  */
-@property (nonatomic, readonly) SPLStopwatch *stopwatch;
+@property (nonatomic, readonly, nullable) SPLStopwatch *stopwatch;
 
 /**
  The convenience constructor of SPLStudyplus class.
@@ -181,5 +183,7 @@
  渡されたurlがStudyplusSDKで対応すべきURL（スキームが"studyplus-{consumerKey}"であり、host/pathComponentsが想定内であるもの）であればYES、それ以外はNOを返します。
  */
 - (BOOL)openURL:(NSURL*)url;
+
+NS_ASSUME_NONNULL_END
 
 @end
