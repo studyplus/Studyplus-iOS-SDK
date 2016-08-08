@@ -22,6 +22,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  The class that represents the amount of learning. <br>
  学習量を表すクラスです。
@@ -35,7 +37,7 @@
  @param amount 学習量。
  @result SPLStudyplusRecordAmount* 生成したAmountオブジェクトです。
  */
-+ (SPLStudyplusRecordAmount*)amount:(NSUInteger)amount;
++ (instancetype)amount:(NSUInteger)amount;
 
 /**
  Creates and returns the Amount object with a range of learning amount.<br>
@@ -45,18 +47,20 @@
  @param to 学習量の終点。
  @result SPLStudyplusRecordAmount* 生成したAmountオブジェクトです。
  */
-+ (SPLStudyplusRecordAmount*)amountAsRangeWithFrom:(NSUInteger)from to:(NSUInteger)to;
++ (instancetype)amountAsRangeWithFrom:(NSUInteger)from to:(NSUInteger)to;
 
 /**
  Creates and returns the Amount object that has no learning amount.<br>
  学習量を持たないAmountオブジェクトを生成して返します。
  @result SPLStudyplusRecordAmount* 生成したAmountオブジェクトです。
  */
-+ (SPLStudyplusRecordAmount*)amountAsNone;
++ (instancetype)amountAsNone;
 
 /**
  @result Returns the parameters of the study record for posting API
  */
 - (NSDictionary*)toRequestParameter;
+
+NS_ASSUME_NONNULL_END
 
 @end

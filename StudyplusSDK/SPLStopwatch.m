@@ -35,7 +35,7 @@ typedef NS_ENUM(NSInteger, SPLStopwatchState) {
 
 @implementation SPLStopwatch
 
--(id)init
+-(instancetype)init
 {
     if (self = [super init]) {
         self.elapsedSeconds = 0;

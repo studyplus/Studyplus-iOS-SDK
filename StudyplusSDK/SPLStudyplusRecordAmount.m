@@ -28,12 +28,12 @@
 
 @implementation SPLStudyplusRecordAmount
 
-+ (SPLStudyplusRecordAmount*)amount:(NSUInteger)amount
++ (instancetype)amount:(NSUInteger)amount
 {
     return [[[self class] alloc] initAsAmount:amount];
 }
 
-- (id)initAsAmount:(NSUInteger)amount
+- (instancetype)initAsAmount:(NSUInteger)amount
 {
     if (self = [super init]) {
         _requestParameter = @{
@@ -43,12 +43,12 @@
     return self;
 }
 
-+ (SPLStudyplusRecordAmount*)amountAsRangeWithFrom:(NSUInteger)from to:(NSUInteger)to
++ (instancetype)amountAsRangeWithFrom:(NSUInteger)from to:(NSUInteger)to
 {
     return [[[self class] alloc] initAsRangeWithFrom:from to:to];
 }
 
-- (id)initAsRangeWithFrom:(NSUInteger)from to:(NSUInteger)to
+- (instancetype)initAsRangeWithFrom:(NSUInteger)from to:(NSUInteger)to
 {
     if (self = [super init]) {
         _requestParameter = @{
@@ -59,12 +59,12 @@
     return self;
 }
 
-+ (SPLStudyplusRecordAmount*)amountAsNone
++ (instancetype)amountAsNone
 {
     return [[[self class] alloc] initAsNone];
 }
 
-- (id)initAsNone
+- (instancetype)initAsNone
 {
     if (self = [super init]) {
         _requestParameter = @{};
