@@ -119,14 +119,4 @@ static NSInteger const ApiDefaultVersion = 1;
     return [NSString stringWithFormat:@"%@v%ld/%@", [self apiBaseURL], (long)self.apiVersion, path];
 }
 
-+ (NSOperationQueue *)sharedQueue
-{
-    static NSOperationQueue *queue;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        queue = [NSOperationQueue new];
-    });
-    return queue;
-}
-
 @end
