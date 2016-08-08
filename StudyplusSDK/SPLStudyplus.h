@@ -108,8 +108,8 @@ NS_ASSUME_NONNULL_BEGIN
  @return SPLStudyplus object. <br>
  SPLStudyplusオブジェクト。
  */
-+ (SPLStudyplus*)studyplusWithConsumerKey:(NSString*)consumerKey
-                        andConsumerSecret:(NSString*)consumerSecret;
++ (instancetype)studyplusWithConsumerKey:(NSString*)consumerKey
+                       andConsumerSecret:(NSString*)consumerSecret;
 
 /**
  Opens the auth screen by invoking the Studyplus application.

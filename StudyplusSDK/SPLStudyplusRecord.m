@@ -33,12 +33,12 @@
 
 @implementation SPLStudyplusRecord
 
-+ (SPLStudyplusRecord*)recordWithDuration:(NSTimeInterval)duration
++ (instancetype)recordWithDuration:(NSTimeInterval)duration
 {
     return [self recordWithDuration:duration options:@{}];
 }
 
-+ (SPLStudyplusRecord*)recordWithDuration: (NSTimeInterval)duration options:(NSDictionary*)options
++ (instancetype)recordWithDuration: (NSTimeInterval)duration options:(NSDictionary*)options
 {
     return [[[self class] alloc] initWithDuration:duration options:options];
 }
@@ -52,7 +52,7 @@
     return value;
 }
 
-- (id)initWithDuration:(NSTimeInterval)duration options:(NSDictionary*)options
+- (instancetype)initWithDuration:(NSTimeInterval)duration options:(NSDictionary*)options
 {
     if (self = [super init]) {
         _duration = duration;
