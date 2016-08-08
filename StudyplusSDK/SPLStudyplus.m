@@ -114,6 +114,14 @@ static NSString * const AppStoreURL = @"https://itunes.apple.com/jp/app/mian-qia
         return;
     }
     
+    if (![self isConnected]) {
+        if ([self.delegate respondsToSelector:@selector(studyplusDidFailToPostStudyRecord:withError:)]) {
+            [self.delegate studyplusDidFailToPostStudyRecord:self withError:[SPLStudyplusError errorFromStudyplusErrorCode:SPLErrorCodeNotConnected]];
+        }
+        
+        return;
+    }
+    
     SPLStudyplusAPIRequest *request = [SPLStudyplusAPIRequest
                                        newRequestWithAccessToken:self.accessToken
                                        options:@{

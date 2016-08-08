@@ -64,12 +64,7 @@ static NSInteger const ApiDefaultVersion = 1;
            requestParameter:(NSDictionary *)requestParameter
                   completed:(void(^)(NSDictionary *response))completed
                      failed:(void(^)(NSError *error))failed
-{
-    if (!self.accessToken || self.accessToken.length == 0) {
-        failed([SPLStudyplusError errorFromStudyplusErrorCode:SPLErrorCodeNoAccessToken]);
-        return;
-    }
-    
+{    
     [self sendRequestWithPath:path
                 requestParams:requestParameter
                     completed:completed
