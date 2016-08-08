@@ -83,7 +83,7 @@ static NSInteger const ApiDefaultVersion = 1;
                      failed:(void(^)(NSInteger httpStatusCode, NSError *error))failed
 {
     AFHTTPResponseSerializer *responseSerializer = [AFHTTPResponseSerializer serializer];
-    AFJSONRequestSerializer * requestSerializer = [AFJSONRequestSerializer serializer];
+    AFJSONRequestSerializer *requestSerializer = [AFJSONRequestSerializer serializer];
     [requestSerializer setValue:[NSString stringWithFormat:@"OAuth %@", self.accessToken]
              forHTTPHeaderField:@"HTTP_AUTHORIZATION"];
     

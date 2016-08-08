@@ -50,7 +50,8 @@ static NSString * const AppStoreURL = @"https://itunes.apple.com/jp/app/mian-qia
 }
 
 - (id)__initWithConsumerKey:(NSString*)consumerKey
-          andConsumerSecret:(NSString*)consumerSecret {
+          andConsumerSecret:(NSString*)consumerSecret
+{
     
     if (self = [super init]) {
         self.consumerKey = consumerKey;
@@ -164,7 +165,8 @@ static NSString * const AppStoreURL = @"https://itunes.apple.com/jp/app/mian-qia
 
 #pragma mark - privates
 
-- (id)init {
+- (id)init
+{
     @throw [NSException exceptionWithName:NSInternalInconsistencyException
                                    reason:@"-init method is not available."
                                  userInfo:nil];

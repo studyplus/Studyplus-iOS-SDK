@@ -43,7 +43,8 @@
     return [[[self class] alloc] initWithDuration:duration options:options];
 }
 
-- (id)getKey:(NSString *)key from:(NSDictionary *)dict orElse:(id)elseValue {
+- (id)getKey:(NSString *)key from:(NSDictionary *)dict orElse:(id)elseValue
+{
     id value = dict[key];
     if (value == [NSNull null] || value == nil) {
         value = elseValue;
