@@ -42,16 +42,16 @@ static NSString * const AppStoreURL = @"https://itunes.apple.com/jp/app/mian-qia
 
 @implementation SPLStudyplus
 
-+ (SPLStudyplus*)studyplusWithConsumerKey:(NSString*)consumerKey
-                        andConsumerSecret:(NSString*)consumerSecret
++ (instancetype)studyplusWithConsumerKey:(NSString*)consumerKey
+                       andConsumerSecret:(NSString*)consumerSecret
 {
     return [[SPLStudyplus alloc] __initWithConsumerKey:consumerKey
                                      andConsumerSecret:consumerSecret];
 }
 
-- (id)__initWithConsumerKey:(NSString*)consumerKey
-          andConsumerSecret:(NSString*)consumerSecret {
-    
+- (instancetype)__initWithConsumerKey:(NSString*)consumerKey
+                    andConsumerSecret:(NSString*)consumerSecret
+{
     if (self = [super init]) {
         self.consumerKey = consumerKey;
         self.consumerSecret = consumerSecret;
@@ -113,6 +113,14 @@ static NSString * const AppStoreURL = @"https://itunes.apple.com/jp/app/mian-qia
         return;
     }
     
+    if (![self isConnected]) {
+        if ([self.delegate respondsToSelector:@selector(studyplusDidFailToPostStudyRecord:withError:)]) {
+            [self.delegate studyplusDidFailToPostStudyRecord:self withError:[SPLStudyplusError errorFromStudyplusErrorCode:SPLErrorCodeNotConnected]];
+        }
+
+        return;
+    }
+    
     SPLStudyplusAPIRequest *request = [SPLStudyplusAPIRequest
                                        newRequestWithAccessToken:self.accessToken
                                        options:@{
@@ -141,8 +149,8 @@ static NSString * const AppStoreURL = @"https://itunes.apple.com/jp/app/mian-qia
     }
     
     if ([url.pathComponents[1] isEqualToString:@"success"]) {
-        NSString *accessToken = url.pathComponents[2];
-        NSString *username = url.pathComponents[3];
+        NSString *accessToken = [url.pathComponents[2] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+        NSString *username = [url.pathComponents[3] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
         [self saveAccessToken:accessToken andUsername:username];
         [self.delegate studyplusDidConnect:self];
     } else if ([url.pathComponents[1] isEqualToString:@"fail"]) {
@@ -164,7 +172,8 @@ static NSString * const AppStoreURL = @"https://itunes.apple.com/jp/app/mian-qia
 
 #pragma mark - privates
 
-- (id)init {
+- (id)init
+{
     @throw [NSException exceptionWithName:NSInternalInconsistencyException
                                    reason:@"-init method is not available."
                                  userInfo:nil];

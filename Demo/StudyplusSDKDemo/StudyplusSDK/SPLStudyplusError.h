@@ -31,6 +31,7 @@ typedef NS_ENUM(NSInteger, SPLErrorCode) {
     SPLErrorCodeNetworkUnavailable = 6000,
     SPLErrorCodeServerError = 7000,
     SPLErrorCodePostRecordFailed = 8000,
+    SPLErrorCodeNotConnected = 9000,
     SPLErrorCodeUnknown = 90000
 };
 

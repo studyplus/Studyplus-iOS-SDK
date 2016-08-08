@@ -95,7 +95,7 @@ SPLStudyplus *studyplus;
 }
 
 - (void)updateElapsedSeconds {
-    self.elapsedSecondsLabel.text = [NSString stringWithFormat:@"%d", [[self studyplus].stopwatch elapsedSeconds]];
+    self.elapsedSecondsLabel.text = [NSString stringWithFormat:@"%lu", (unsigned long)[[self studyplus].stopwatch elapsedSeconds]];
 }
 
 - (void)updateIsConnected {

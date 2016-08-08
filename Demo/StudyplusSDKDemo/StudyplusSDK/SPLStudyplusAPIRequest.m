@@ -35,7 +35,7 @@ static NSInteger const ApiDefaultVersion = 1;
 
 @implementation SPLStudyplusAPIRequest
 
-- (id)init
+- (instancetype)init
 {
     if (self = [super init]) {
         _accessToken = nil;
@@ -43,15 +43,15 @@ static NSInteger const ApiDefaultVersion = 1;
     return self;
 }
 
-+ (SPLStudyplusAPIRequest*)newRequestWithAccessToken:(NSString*)accessToken
-                                             options:(NSDictionary*)options
++ (instancetype)newRequestWithAccessToken:(NSString*)accessToken
+                                  options:(NSDictionary*)options
 {
     return [[SPLStudyplusAPIRequest alloc] initWithAccessToken:accessToken
                                                        options:options];
 }
 
-- (id)initWithAccessToken:(NSString*)accessToken
-                  options:(NSDictionary*)options
+- (instancetype)initWithAccessToken:(NSString*)accessToken
+                            options:(NSDictionary*)options
 {
     if (self = [super init]) {
         _accessToken = accessToken;
@@ -64,7 +64,7 @@ static NSInteger const ApiDefaultVersion = 1;
            requestParameter:(NSDictionary *)requestParameter
                   completed:(void(^)(NSDictionary *response))completed
                      failed:(void(^)(NSError *error))failed
-{
+{    
     [self sendRequestWithPath:path
                 requestParams:requestParameter
                     completed:completed
@@ -83,7 +83,7 @@ static NSInteger const ApiDefaultVersion = 1;
                      failed:(void(^)(NSInteger httpStatusCode, NSError *error))failed
 {
     AFHTTPResponseSerializer *responseSerializer = [AFHTTPResponseSerializer serializer];
-    AFJSONRequestSerializer * requestSerializer = [AFJSONRequestSerializer serializer];
+    AFJSONRequestSerializer *requestSerializer = [AFJSONRequestSerializer serializer];
     [requestSerializer setValue:[NSString stringWithFormat:@"OAuth %@", self.accessToken]
              forHTTPHeaderField:@"HTTP_AUTHORIZATION"];
     
@@ -117,16 +117,6 @@ static NSInteger const ApiDefaultVersion = 1;
 - (NSString *)buildUrlFromPath:(NSString *)path
 {
     return [NSString stringWithFormat:@"%@v%ld/%@", [self apiBaseURL], (long)self.apiVersion, path];
-}
-
-+ (NSOperationQueue *)sharedQueue
-{
-    static NSOperationQueue *queue;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        queue = [NSOperationQueue new];
-    });
-    return queue;
 }
 
 @end
