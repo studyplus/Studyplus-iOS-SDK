@@ -207,11 +207,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43E8E6991856CB780066D476 /* Build configuration list for PBXNativeTarget "StudyplusSDK" */;
 			buildPhases = (
-				813A4A7A17024E4CA022C118 /* 📦 Check Pods Manifest.lock */,
+				813A4A7A17024E4CA022C118 /* [CP] Check Pods Manifest.lock */,
 				43E8E6721856CB770066D476 /* Sources */,
 				43E8E6731856CB770066D476 /* Frameworks */,
 				43E8E6741856CB770066D476 /* CopyFiles */,
-				62CDD57D8E864132B070C939 /* 📦 Copy Pods Resources */,
+				62CDD57D8E864132B070C939 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -226,12 +226,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43E8E69C1856CB780066D476 /* Build configuration list for PBXNativeTarget "StudyplusSDKTests" */;
 			buildPhases = (
-				5C9B292132524996BCADD319 /* 📦 Check Pods Manifest.lock */,
+				5C9B292132524996BCADD319 /* [CP] Check Pods Manifest.lock */,
 				43E8E6821856CB770066D476 /* Sources */,
 				43E8E6831856CB770066D476 /* Frameworks */,
 				43E8E6841856CB770066D476 /* Resources */,
-				6C6645884994437082EAF22F /* 📦 Copy Pods Resources */,
-				A904EA54BC5E03808ECBD415 /* 📦 Embed Pods Frameworks */,
+				6C6645884994437082EAF22F /* [CP] Copy Pods Resources */,
+				A904EA54BC5E03808ECBD415 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,7 +250,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = SPL;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = studyplus.jp;
 			};
 			buildConfigurationList = 43E8E6711856CB770066D476 /* Build configuration list for PBXProject "StudyplusSDK" */;
@@ -283,29 +283,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5C9B292132524996BCADD319 /* 📦 Check Pods Manifest.lock */ = {
+		5C9B292132524996BCADD319 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		62CDD57D8E864132B070C939 /* 📦 Copy Pods Resources */ = {
+		62CDD57D8E864132B070C939 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,14 +313,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StudyplusSDK/Pods-StudyplusSDK-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6C6645884994437082EAF22F /* 📦 Copy Pods Resources */ = {
+		6C6645884994437082EAF22F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,29 +328,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StudyplusSDKTests/Pods-StudyplusSDKTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		813A4A7A17024E4CA022C118 /* 📦 Check Pods Manifest.lock */ = {
+		813A4A7A17024E4CA022C118 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		A904EA54BC5E03808ECBD415 /* 📦 Embed Pods Frameworks */ = {
+		A904EA54BC5E03808ECBD415 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,13 +418,18 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -440,7 +445,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				VALID_ARCHS = "arm64 armv7 armv7s";
@@ -460,12 +465,17 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -475,7 +485,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 				VALID_ARCHS = "arm64 armv7 armv7s";
