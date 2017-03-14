@@ -5,7 +5,7 @@ Studyplus iOS SDK
 
 ## Requirements
 
- * iOS 7.0 or above
+ * iOS 8.0 or above
  * Xcode command line tools
  * ARC
  * [Studyplus iOS App 3.10.0 or adove](https://itunes.apple.com/jp/app/mian-qiangga-leshiku-xuku!/id505410049?mt=8)
@@ -21,7 +21,7 @@ Studyplus iOS SDK
 
 ```ruby
 # Edit your podfile
-platform :ios, '7.0'
+platform :ios, '8.0'
 pod 'StudyplusSDK'
 ```
 and run
@@ -37,7 +37,7 @@ and run
 3. Install [AFNetworking](https://github.com/AFNetworking/AFNetworking) and [UICKeyChainStore](https://github.com/kishikawakatsumi/UICKeyChainStore) too.
 4. Add required frameworks(i.e. ```Security.framework, SystemConfiguration.framework, MobileCoreServices, CoreGraphics``` etc). See [AFNetworking](https://github.com/AFNetworking/AFNetworking) and [UICKeyChainStore](https://github.com/kishikawakatsumi/UICKeyChainStore).
 
-#### By source copy (iOS 7 required)
+#### By source copy (iOS 8 required)
 
 1. Get StudyplusSDK
   * ```git clone https://github.com/studyplus/Studyplus-iOS-SDK``` or download zip from [this page](https://github.com/studyplus/Studyplus-iOS-SDK/releases).
@@ -48,7 +48,7 @@ and run
 
 ### Set up custom URL scheme
 
-set "studyplus-*{your consumer key}*" to URL Types.  
+set "studyplus-*{your consumer key}*" to URL Types.
 (ex. studyplus-MIoh79q7pfMbTUVA3BNsSeTaZRcOK3yg )
 
 ![xcode](https://raw.github.com/studyplus/Studyplus-iOS-SDK/master/docs/set_url_scheme.png)
@@ -84,7 +84,7 @@ static SPLStudyplus *studyplus;
 }
 ```
 
-### Auth or Login 
+### Auth or Login
 ```Objective-C
 @implementation AppDelegate
 
