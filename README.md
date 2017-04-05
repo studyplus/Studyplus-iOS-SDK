@@ -1,7 +1,8 @@
 StudyplusSDK
 =======
 
-Studyplus iOS SDK
+Studyplus iOS SDK for Objective-C.
+[New Studyplus iOS SDK for Swift.](https://github.com/studyplus/Studyplus-iOS-SDK-V2)
 
 ## Requirements
 
