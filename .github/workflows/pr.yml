@@ -1,0 +1,14 @@
+name: PR check
+
+on: pull_request
+
+jobs:
+  danger:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Danger(SwiftLint)
+        uses: docker://ghcr.io/danger/danger-swift-with-swiftlint:3.8.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
