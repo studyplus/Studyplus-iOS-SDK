@@ -1,4 +1,4 @@
-# StudyplusSDK-V2
+# StudyplusSDK
 
 ## Requirements
 
@@ -9,15 +9,15 @@
 
 ### [Swift Package Manager](https://github.com/apple/swift-package-manager/)
 
-<https://github.com/studyplus/Studyplus-iOS-SDK-V2>を追加してください。
+<https://github.com/studyplus/Studyplus-iOS-SDK>を追加してください。
 
 ### [CocoaPods](https://cocoapods.org/)
 
-Podfileに `StudyplusSDK-V2` を追加してください。
+Podfileに `StudyplusSDK` を追加してください。
 
 ```ruby
 use_frameworks!
-pod 'StudyplusSDK-V2'
+pod 'StudyplusSDK'
 ```
 
 ## Usage
@@ -29,7 +29,7 @@ pod 'StudyplusSDK-V2'
 
 __studyplus-*{consumer key}*__ を URL Typesに追加してください。
 
-![xcode](https://github.com/studyplus/Studyplus-iOS-SDK-V2/blob/master/docs/set_url_scheme.png)
+![xcode](https://github.com/studyplus/Studyplus-iOS-SDK/blob/main/docs/set_url_scheme.png)
 
 ### `consumer key`と`consumer secret`の追加
 
@@ -119,7 +119,7 @@ Studyplus.shared.post(record, completion: { result in
 
 ## Demo app
 
-![demo](https://github.com/studyplus/Studyplus-iOS-SDK-V2/blob/main/docs/demoapp_v2.jpg)
+![demo](https://github.com/studyplus/Studyplus-iOS-SDK/blob/main/docs/demoapp.jpg)
 
 - Set __studyplus-*{your consumer key}*__ to URL Types in Demo.
 - Set __consumerKey__ and __consumerSecret__ in Info.plist of Demo.

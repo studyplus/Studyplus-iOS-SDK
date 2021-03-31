@@ -3,19 +3,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "StudyplusSDK-V2",
+    name: "StudyplusSDK",
     platforms: [
         .iOS(.v11)
     ],
     products: [
         .library(
-            name: "StudyplusSDK-V2",
-            targets: ["StudyplusSDK-V2"]
+            name: "StudyplusSDK",
+            targets: ["StudyplusSDK"]
         )
     ],
     targets: [
         .target(
-            name: "StudyplusSDK-V2",
+            name: "StudyplusSDK",
             path: "Lib/StudyplusSDK"
         )
     ]

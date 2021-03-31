@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
-  s.name                  = "StudyplusSDK-V2"
+  s.name                  = "StudyplusSDK"
   s.version               = "3.0.0"
-  s.summary               = "StudyplusSDK-V2 is Studyplus iOS SDK for Swift"
+  s.summary               = "StudyplusSDK is Studyplus iOS SDK for Swift"
   s.homepage              = "https://info.studyplus.jp"
   s.license               = "MIT"
-  s.source                = { :git => "https://github.com/studyplus/Studyplus-iOS-SDK-V2.git", :tag => s.version }
+  s.source                = { :git => "https://github.com/studyplus/Studyplus-iOS-SDK.git", :tag => s.version }
   s.source_files          = "StudyplusSDK", "Lib/StudyplusSDK/**/*.{swift}"
   s.platform              = :ios, '11.0'
   s.ios.deployment_target = '11.0'
