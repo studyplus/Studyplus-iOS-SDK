@@ -1,8 +1,0 @@
-build/archives
-build/**/working
-xcuserdata
-Pods
-xcshareddata
-nowbuilding.lock
-Podfile.lock
-.DS_Store
