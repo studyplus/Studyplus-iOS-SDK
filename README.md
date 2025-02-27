@@ -22,7 +22,7 @@ pod 'StudyplusSDK'
 
 ## Usage
 
-<https://info.studyplus.co.jp/contact/studyplus-api>よりStudypluAPIの申請を最初に行ってください。
+<https://form.run/@studyplusapi>よりStudypluAPIの申請を最初に行ってください。
 審査後、`consumer key`と`consumer secret`の2つをメールにて送付いたします。
 
 ### custom URL schemeの設定
