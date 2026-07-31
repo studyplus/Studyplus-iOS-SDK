@@ -139,6 +139,11 @@ final public class Studyplus {
 
         switch url.pathComponents[1] {
         case "success":
+            guard url.pathComponents.count >= 3 else {
+                delegate?.studyplusLoginFail(error: .unknownUrl(url))
+                return false
+            }
+
             let accessToken: Data = url
                 .pathComponents[2]
                 .trimmingCharacters(in: .whitespacesAndNewlines)
@@ -184,7 +189,8 @@ final public class Studyplus {
         guard let scheme = url.scheme else { return false }
         guard scheme == "studyplus-\(consumerKey)" else { return false }
 
-        if url.pathComponents.isEmpty {
+        // handle(_:) reads pathComponents[1], so at least 2 components are required
+        if url.pathComponents.count < 2 {
             return false
         }
 
