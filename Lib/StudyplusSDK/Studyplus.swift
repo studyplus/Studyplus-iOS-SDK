@@ -190,9 +190,7 @@ final public class Studyplus {
         guard scheme == "studyplus-\(consumerKey)" else { return false }
 
         // handle(_:) reads pathComponents[1], so at least 2 components are required
-        if url.pathComponents.count < 2 {
-            return false
-        }
+        guard url.pathComponents.count >= 2 else { return false }
 
         return true
     }
