@@ -15,7 +15,7 @@ jobs:
       statuses: write  # Danger が結果をコミットステータスに付けるため
 
     steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Danger(SwiftLint)
         uses: docker://ghcr.io/danger/danger-swift-with-swiftlint@sha256:2ad66810ba60c21eacae54e698e690ddd9fa61073253b19dc68dadc3b8f2a71b # 3.8.0
         env:
